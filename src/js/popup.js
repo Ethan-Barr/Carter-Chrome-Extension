@@ -11,7 +11,7 @@ submitButton.addEventListener("click", () => {
     // Display "loading" message in output element
     output.innerText = "Loading...";
 
-    fetch(chrome.extension.getURL('config.json'))
+    fetch(chrome.runtime.getURL('config.json'))
         .then(response => response.json())
         .then(data => {
             const key = data.apiKey;
