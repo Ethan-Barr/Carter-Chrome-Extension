@@ -9,10 +9,17 @@
 <body>
 	<div class="container">
 		<h1> CarterLabs </h1>
-		<input type="text" id="userInput" placeholder="Enter text here">
-		<button id="submitButton">Submit</button>
-		<h4>Output:</h4>
-		<div id="output"></div>
+		<div class="input">
+			<input type="text" id="userInput" placeholder="Enter text here">
+			<button id="submitButton">Submit</button>
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="output-box">
+			<h4 class="output-label">Output:</h4>
+			<p id="output" class="output-gen"></p>
+		</div>
 
 		<script src="js/popup.js"></script>
 	</div>

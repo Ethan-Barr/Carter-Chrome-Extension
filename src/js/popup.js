@@ -40,3 +40,15 @@ submitButton.addEventListener("click", () => {
         })
         .catch(error => console.error(error));
 });
+
+// Add an event listener to the input field to listen for the "keydown" event
+userInput.addEventListener("keydown", (event) => {
+    // Check if the key pressed is the enter key (key code 13)
+    if (event.keyCode === 13) {
+        // Prevent the default behavior of the enter key (submitting the form)
+        event.preventDefault();
+
+        // Trigger the click event on the submit button
+        submitButton.click();
+    }
+});
