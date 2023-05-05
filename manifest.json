@@ -1,6 +1,6 @@
 {
     "name": "Carter-API",
-    "version": "0.1",
+    "version": "0.2.1",
     "manifest_version": 3,
     "description": "This is my first Chrome extension.",
     "action": {
