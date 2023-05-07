@@ -1,76 +1,80 @@
 /* Global styles */
 body {
-	font-family: Arial, sans-serif;
+	width: 350px;
+	height: 200px;
 	margin: 0;
 	padding: 0;
-	background-color: #111111;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom right, #440066, #111111);
 	color: #FFFFFF;
 }
 
 .container {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 30px;
-	background-color: #1D1D1D;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	padding-bottom: 10px;
+	background: linear-gradient(to bottom right, #440066, #111111);
 }
 
-/* Header styles */
-h1 {
-	margin-top: 0;
-	font-size: 36px;
-	color: #0082CA;
+.spacer {
+	height: 20px;
 }
 
-/* Input styles */
-.input {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 20px;
+
+/* Logo Sytles*/
+.Logo {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	width: 80px;
+	height: auto;
 }
 
-#userInput {
-	flex-grow: 1;
-	margin-right: 10px;
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	background-color: #2B2B2B;
-	color: #FFFFFF;
+.logo img {
+	max-width: 100%;
+	height: 40px;
 }
 
-#submitButton {
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	background-color: #0082CA;
-	color: #FFFFFF;
-	cursor: pointer;
-}
-
-#submitButton:hover {
-	background-color: #005F9C;
-}
 
 /* Output styles */
 .output-box {
-	background-color: #2B2B2B;
+	margin-top: 10px;
 	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+	background: linear-gradient(to top left, #25005d, #8c4ba8);
+	backdrop-filter: blur(5px);
 }
 
 .output-label {
 	margin-top: 0;
 	margin-bottom: 10px;
 	font-size: 18px;
-	color: #0082CA;
+	color: #DDDDDD;
 }
 
 .output-gen {
 	margin: 0;
 	color: #FFFFFF;
+}
+
+
+/* Input styles */
+.input-box {
+    display: inline-block;
+    padding: 10px;
+}
+
+#userInput {
+	width: 300px;
+    height: 30px; /* default base height */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    background: linear-gradient(to top left, #25005d, #8c4ba8);
+    color: whitesmoke;
+    overflow: auto;
+    resize: vertical;
 }
