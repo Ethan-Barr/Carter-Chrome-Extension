@@ -22,6 +22,26 @@ body {
 }
 
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: linear-gradient(to top left, #25005d, #8c4ba8);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #DDDDDD;
+	border-radius: 10px;
+	border: 2px solid #440066;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #FFFFFF;
+}
+
+
 /* Logo Sytles*/
 .Logo {
 	position: absolute;
@@ -61,20 +81,21 @@ body {
 
 /* Input styles */
 .input-box {
-    display: inline-block;
-    padding: 10px;
+	display: inline-block;
+	padding: 10px;
 }
 
 #userInput {
 	width: 300px;
-    height: 30px; /* default base height */
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding: 5px;
-    border-radius: 8px;
-    background: linear-gradient(to top left, #25005d, #8c4ba8);
-    color: whitesmoke;
-    overflow: auto;
-    resize: vertical;
+	height: 30px;
+	/* default base height */
+	border: none;
+	outline: none;
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 8px;
+	background: linear-gradient(to top left, #25005d, #8c4ba8);
+	color: whitesmoke;
+	overflow: auto;
+	resize: vertical;
 }
