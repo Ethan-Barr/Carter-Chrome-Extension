@@ -44,6 +44,29 @@
 					<img src="assets/icons8-settings.svg" alt="SettingsCog" id="settingInputBtn" />
 				</div>
 			</div>
+
+
+			<div class="mini-contanier-settings">
+				<div class="Set-title">
+					<h2> Settings </h2>
+				</div>
+
+				<div class="Settings-Form">
+					<form>
+						<label for="client-name">Client Name:</label>
+						<input type="text" id="client-name" name="client-name" placeholder="Enter the name of your client" />
+						
+						<label for="player-id">Player ID:</label>
+						<input type="text" id="player-id" name="player-id" placeholder="Enter your name" />
+						
+						<label for="api">API:</label>
+						<input type="password" id="api" name="api" placeholder="Enter API key" />
+						
+						<button type="button" id="save-button" onclick="saveForm()">Save</button>
+					</form>
+				</div>
+			</div>
+
 		</div>
 
 		<script src="js/popup.js"></script>

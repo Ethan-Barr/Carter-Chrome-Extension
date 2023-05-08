@@ -2,7 +2,7 @@
 body {
 	width: 350px;
 	min-height: 200px;
-	max-height: 800;
+	max-height: 800px;
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
@@ -120,3 +120,7 @@ body {
 	overflow: auto;
 	resize: vertical;
 }
+
+
+
+/* Settings form */
