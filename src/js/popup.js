@@ -2,6 +2,12 @@
 const userInput = document.getElementById("userInput");
 const output = document.getElementById("output");
 
+// Get the btn input from setting icon and containers
+const settingBtn = document.getElementById("settingInput");
+const returnBtn = document.getElementById("settingInputBtn");
+const chatContainer = document.querySelector(".container-chat");
+const settingsContainer = document.querySelector(".contanier-settings");
+
 // Add an event listener to the input field to listen for the "keydown" event
 userInput.addEventListener("keydown", (event) => {
     // Check if the key pressed is the enter key (key code 13)
@@ -46,4 +52,15 @@ userInput.addEventListener("keydown", (event) => {
             })
             .catch(error => console.error(error));
     }
+});
+
+
+settingBtn.addEventListener("click", (event) => {
+    chatContainer.style.display = "none";
+    settingsContainer.style.display = "block";
+});
+
+returnBtn.addEventListener("click", (event) => {
+    chatContainer.style.display = "block";
+    settingsContainer.style.display = "none";
 });

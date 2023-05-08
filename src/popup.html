@@ -8,22 +8,42 @@
 
 <body>
 	<div class="container">
-		<div class="logo">
-			<img src="assets/Logo_Text.svg" alt="CarterLogo" />
+		<div class="container-chat" style="display:block">
+			<div class="header">
+				<div class="logo">
+					<img src="assets/Logo_Text.svg" alt="CarterLogo" />
+				</div>
+		
+				<div class="settings-logo">
+					<img src="assets/icons8-settings.svg" alt="SettingsCog" id="settingInput" />
+				</div>
+			</div>
+
+			<div class="spacer"></div>
+
+			<div class="output-box">
+				<h4 class="output-label">Output:</h4>
+				<p id="output" class="output-gen"></p>
+			</div>
+
+			<div class="spacer"></div>
+
+			<div class="input">
+				<textarea id="userInput" placeholder="Enter text here!"></textarea>
+			</div>
 		</div>
 
 
-		<div class="spacer"></div>
-
-		<div class="output-box">
-			<h4 class="output-label">Output:</h4>
-			<p id="output" class="output-gen"></p>
-		</div>
-
-		<div class="spacer"></div>
-
-		<div class="input">
-			<textarea id="userInput" placeholder="Enter text here!"></textarea>
+		<div class="contanier-settings" style="display:none">
+			<div class="header">
+				<div class="logo">
+					<img src="assets/Logo_Text.svg" alt="CarterLogo" />
+				</div>
+		
+				<div class="settings-logo">
+					<img src="assets/icons8-settings.svg" alt="SettingsCog" id="settingInputBtn" />
+				</div>
+			</div>
 		</div>
 
 		<script src="js/popup.js"></script>
