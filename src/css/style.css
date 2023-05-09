@@ -124,3 +124,58 @@ body {
 
 
 /* Settings form */
+
+.Settings-Form form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.Settings-Form label {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+.Settings-Form input[type="text"],
+.Settings-Form input[type="password"] {
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid #5d5d5d;
+	font-size: 16px;
+	margin-bottom: 16px;
+	width: 100%;
+	background-color: transparent;
+	color: #fff;
+}
+
+.Settings-Form input[type="text"]:focus,
+.Settings-Form input[type="password"]:focus {
+	border-bottom-color: #4285f4;
+	outline: none;
+}
+
+.Settings-Form button {
+	background-color: #4285f4;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 24px;
+	transition: background-color 0.3s ease;
+}
+
+.Settings-Form button:hover {
+	background-color: #3367d6;
+}
+
+.Settings-Form input[type="text"]::placeholder,
+.Settings-Form input[type="password"]::placeholder {
+	color: #ddd;
+}
