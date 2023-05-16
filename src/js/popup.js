@@ -64,3 +64,17 @@ returnBtn.addEventListener("click", (event) => {
     chatContainer.style.display = "block";
     settingsContainer.style.display = "none";
 });
+
+
+function saveForm() {
+    const clientName = document.getElementById("client-name").value;
+    const playerId = document.getElementById("player-id").value;
+    const api = document.getElementById("api").value;
+  
+    const formData = { clientName, playerId, api };
+    const jsonString = JSON.stringify(formData);
+  
+    chrome.storage.local.set({ data: jsonString }, function () {
+      console.log("Data saved");
+    });
+  }
