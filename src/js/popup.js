@@ -3,10 +3,7 @@ const userInput = document.getElementById("userInput");
 const output = document.getElementById("output");
 
 // Get the btn input from setting icon and containers
-const settingBtn = document.getElementById("settingInput");
-const returnBtn = document.getElementById("settingInputBtn");
 const chatContainer = document.querySelector(".container-chat");
-const settingsContainer = document.querySelector(".contanier-settings");
 
 // Add an event listener to the input field to listen for the "keydown" event
 userInput.addEventListener("keydown", (event) => {
@@ -15,10 +12,7 @@ userInput.addEventListener("keydown", (event) => {
         // Prevent the default behavior of the enter key (submitting the form)
         event.preventDefault();
 
-        // Get the user's input
         const text = userInput.value;
-
-        // Display "loading" message in output element
         output.innerText = "Loading...";
 
         fetch(chrome.runtime.getURL('config.json'))
@@ -41,9 +35,7 @@ userInput.addEventListener("keydown", (event) => {
                 })
                     .then((response) => response.json())
                     .then((data) => {
-                        // Display the processed text in the output element
                         output.innerText = data.output.text;
-
                         userInput.value = '';
                     })
                     .catch((error) => {
@@ -54,7 +46,6 @@ userInput.addEventListener("keydown", (event) => {
     }
 });
 
-
 settingBtn.addEventListener("click", (event) => {
     chatContainer.style.display = "none";
     settingsContainer.style.display = "block";
@@ -64,17 +55,3 @@ returnBtn.addEventListener("click", (event) => {
     chatContainer.style.display = "block";
     settingsContainer.style.display = "none";
 });
-
-
-function saveForm() {
-    const clientName = document.getElementById("client-name").value;
-    const playerId = document.getElementById("player-id").value;
-    const api = document.getElementById("api").value;
-  
-    const formData = { clientName, playerId, api };
-    const jsonString = JSON.stringify(formData);
-  
-    chrome.storage.local.set({ data: jsonString }, function () {
-      console.log("Data saved");
-    });
-  }
